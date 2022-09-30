@@ -1,0 +1,97 @@
+>camt make it to workHelp me please<
+I Am A 9th grader And i tried writing my program,
+Unfortunately i can't get it to funtion as intended
+it just stops after the'enter your speed in kph unit' Part
+please nudge me the correct direction 
+i am new to github too...(teeheehee)
+
+
+Here is my code:
+import java.util.*;
+class maxSpeedandFine
+{
+    static void main()
+
+    {
+        Scanner sc = new Scanner(System.in);
+        int s,fine,inc;
+        int unit;
+        System.out.println("Choose Your Speed Unit(1 for kph/2 for mph):");
+        unit=sc.nextInt();
+        if(unit>0&&unit<2)
+        {
+            System.out.println("Enter your speed in kph unit:");
+            s=sc.nextInt();
+        if(s>99&&s<110)
+            {
+            System.out.println("Speed Limit Exceeded/Fine Required(Stage 1)");
+            System.out.println("Enter Your Monthly Income");
+            inc=sc.nextInt();
+            fine=inc+(10/100)*inc;
+            System.out.println("Your Fine="+fine);
+        }
+        else if(s>109&&s<120)
+        {
+           System.out.println("Speed Limit Exceeded/Fine Required(Stage 2)");
+            System.out.println("Enter Your Monthly Income");
+            inc=sc.nextInt();
+            fine=inc+(20/100)*inc;
+            System.out.println("Your Fine="+fine);
+        }
+        else if(s>119&&s<130)
+        {
+            System.out.println("Speed Limit Exceeded/Fine Required(Stage 3)");
+            System.out.println("Enter Your Monthly Income");
+            inc=sc.nextInt();
+            fine=inc+(30/100)*inc;
+            System.out.println("Your Fine="+fine);
+        }
+        else if(s>129)
+        {
+            System.out.println("Speed Limit Exceeded/Fine Required(Stage 4)");
+            System.out.println("Enter Your Monthly Income");
+            inc=sc.nextInt();
+            fine=inc+(40/100)*inc;
+            System.out.println("Your Fine="+fine);
+        }
+    }
+    else if(unit>1&&unit<3)
+    {
+        System.out.println("Enter Your speed in mph unit:");
+        s=sc.nextInt();
+        if(s>62&&s<68)
+            {
+            System.out.println("Speed Limit Exceeded/Fine Required(Stage 1)");
+            System.out.println("Enter Your Monthly Income");
+            inc=sc.nextInt();
+            fine=inc+(10/100)*inc;
+            System.out.println("Your Fine="+fine);
+        }
+        else if(s>68&&s<75)
+        {
+           System.out.println("Speed Limit Exceeded/Fine Required(Stage 2)");
+            System.out.println("Enter Your Monthly Income");
+            inc=sc.nextInt();
+            fine=inc+(20/100)*inc;
+            System.out.println("Your Fine="+fine);
+        }
+        else if(s>74&&s<81)
+        {
+            System.out.println("Speed Limit Exceeded/Fine Required(Stage 3)");
+            System.out.println("Enter Your Monthly Income");
+            inc=sc.nextInt();
+            fine=inc+(30/100)*inc;
+            System.out.println("Your Fine="+fine);
+        }
+        else if(s>80)
+        {
+            System.out.println("Speed Limit Exceeded/Fine Required(Stage 4)");
+            System.out.println("Enter Your Monthly Income");
+            inc=sc.nextInt();
+            fine=inc+(40/100)*inc;
+            System.out.println("Your Fine="+fine);
+        }
+        
+    }
+}}
+Any help or advice would help....
